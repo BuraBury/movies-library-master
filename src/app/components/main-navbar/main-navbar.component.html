@@ -1,0 +1,26 @@
+<div class="main-navbar">
+  <div class="check-box-container">
+    <div (click)="setSearchById()"
+      class="check-box">
+      <i
+        *ngIf="isSearchById"
+        class="fas fa-check"></i>
+    </div>
+    <p>search by id</p>
+  </div>
+
+  <div class="main-navbar-search-box">
+    <input
+      type="text"
+      class="main-navbar-search-input"
+      [(ngModel)]="searchQuery"
+    >
+    <button
+      (click)="searchMovie()"
+      class="search-btn"
+    >
+      <i class="fas fa-search"></i>
+    </button>
+  </div>
+</div>
+
